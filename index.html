@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 1</title>
+</head>
+<body>
+
+    <h1>Formularios HTML</h1>
+
+    <form action="mailto:mail@mail.com"
+    method="POST">
+
+    <div>
+        <label>
+            Nombre
+            <br>
+            <input type="text" name="nombre" required>
+        </label>
+    </div>
+    
+    <!--Localidad-->
+    <div>
+        <label>
+            Localidad
+            <select name="campolocalidad" id="localidad" required>
+                <option>Seleccionar</option>
+                <option>CABA</option>
+                <option value="">Temperley</option>
+                <option value="">Rosario</option>
+            </select>
+
+        </label>
+        
+    </div>
+        
+    <div>
+        <label for="campoEmail">Email</label>
+        <br>
+        <input type="email" name="email" id="campoEmail" required>
+    </div>
+        
+    <!--Fecha-->
+    <div>
+        <label for="campoFecha">Fecha</label>
+        <input type="date" name="fecha"
+        id="campoFecha" required>
+    </div>
+
+    <div>
+        Género
+        <label>
+            Femenino
+            <input type="radio" name="genero" value="f" required>
+        </label>
+        <label>
+            Masculino
+            <input type="radio" name="genero" value="m">
+        </label>
+        <label>
+            Deseo No contestar
+            <input type="radio" name="genero" value="na">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Mensaje
+            <br>
+            <textarea name="mensaje"
+            id="" cols="30" rows="5" required></textarea>
+        </label>
+    </div>
+
+        
+        <label>
+            <input type="checkbox"
+        name="permiso" required>acepto 
+        los terminos y condiciones del sitio
+        </label>
+        
+
+        <button type="submit">Envia Info</button>
+</form>
+    
+</body>
+</html>
